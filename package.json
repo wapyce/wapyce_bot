@@ -1,0 +1,30 @@
+{
+  "name": "wapyce_bot",
+  "version": "1.0.0",
+  "description": "This bot validate the accessibility of web pages to submit to Wapyce.",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-eslint": "^21.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlson Santana Cruz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wapyce/wapyce_bot.git"
+  },
+  "keywords": [
+    "accessibility",
+    "wcag",
+    "bot",
+    "validation",
+    "checker"
+  ],
+  "homepage": "https://github.com/wapyce/wapyce_bot",
+  "bugs": {
+    "url": "https://github.com/wapyce/wapyce_bot/issues"
+  }
+}
