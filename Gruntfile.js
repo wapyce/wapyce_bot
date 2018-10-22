@@ -7,7 +7,9 @@ module.exports = function(grunt) {
                 configFile: 'eslint.json'
             },
             files: [
-                'Gruntfile.js'
+                'Gruntfile.js',
+                'config.js',
+                'request_validation.js'
             ]
         }
     });
