@@ -9,7 +9,8 @@ module.exports = function(grunt) {
             files: [
                 'Gruntfile.js',
                 'config.js',
-                'request_validation.js'
+                'request_validation.js',
+                'collect_urls_site.js'
             ]
         }
     });
