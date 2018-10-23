@@ -2,6 +2,15 @@
 
 This bot validate the accessibility of web pages to submit to [Wapyce](https://github.com/wapyce/wapyce).
 
+## Execute
+
+1. [Install Node.js](https://nodejs.org/en/download/package-manager/);
+2. Download Wapyce Bot;
+3. [Install the dependencies of Wapyce Bot](https://docs.npmjs.com/cli/install);
+4. Get your User Token in [Wapyce](https://github.com/wapyce/wapyce);
+5. Set your User Token in `config.js`;
+6. Run the `index.js` file using Node.js.
+
 ## Contributing
 
 If you want contribute with Wapyce Bot, read [contributing guidelines](CONTRIBUTING.md).
