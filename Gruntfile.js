@@ -11,7 +11,8 @@ module.exports = function(grunt) {
                 'config.js',
                 'request_validation.js',
                 'collect_urls_site.js',
-                'validator.js'
+                'validator.js',
+                'index.js'
             ]
         }
     });

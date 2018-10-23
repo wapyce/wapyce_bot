@@ -8,7 +8,7 @@ const pa11y = require('pa11y');
 const config = require('./config');
 
 
-function run(jsonFile, outputFile) {
+function run(inputFile, outputFile) {
     return new Promise(function(resolve) {
         fs.readFile(inputFile, 'utf8', async function (err, data) {
             if (err) {
@@ -50,7 +50,7 @@ if (require.main === module) {
     var inputFile = argv.i;
     var outputFile = argv.o;
 
-    run(jsonFile, outputFile);
+    run(inputFile, outputFile);
 }
 
 module.exports = {run: run};
