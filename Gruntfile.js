@@ -10,7 +10,8 @@ module.exports = function(grunt) {
                 'Gruntfile.js',
                 'config.js',
                 'request_validation.js',
-                'collect_urls_site.js'
+                'collect_urls_site.js',
+                'validator.js'
             ]
         }
     });
