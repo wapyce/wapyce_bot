@@ -17,7 +17,7 @@ request_validation.run(
     var site = JSON.parse(data);
 
     collect_urls_site.run(
-        site['group']['site'],
+        site['site'],
         config.default_pages_file
     ).then(function() {
         validate_pages.run(
