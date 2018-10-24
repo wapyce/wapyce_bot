@@ -97,7 +97,7 @@ function run(validationFile, requestValidationFile, pagesFile) {
                     console.log('Validation finished.');
                     resolve(null);
                 } else {
-                    console.log('Validation not finished.');
+                    throw new Error('Validation not finished.');
                 }
             });
         }
@@ -141,7 +141,7 @@ function run(validationFile, requestValidationFile, pagesFile) {
 
                         console.log('Issue of page submitted.');
                     } else {
-                        console.log('Issue of page not submitted.');
+                        throw new Error('Issue of page not submitted.');
                     }
                     submitIssues(issues);
                 });
@@ -197,7 +197,7 @@ function run(validationFile, requestValidationFile, pagesFile) {
 
                         console.log('Validated page submitted.');
                     } else {
-                        console.log('Validated page not submitted.');
+                        throw new Error('Validated page not submitted.');
                     }
                     submitPages(validations, index + 1);
                 });
