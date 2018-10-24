@@ -27,9 +27,8 @@ const HEADERS = {
 
 
 function run(validationFile, requestValidationFile, pagesFile) {
-    var completeValidations = JSON.parse(
-        fs.readFileSync(validationFile, 'utf8')
-    );
+    var validationContent = fs.readFileSync(validationFile, 'utf8');
+    var completeValidations = JSON.parse(validationContent);
     var completeIssues = [];
 
     var wapyceValidation = JSON.parse(
@@ -88,7 +87,7 @@ function run(validationFile, requestValidationFile, pagesFile) {
                         )
                     );
                     fs.renameSync(
-                        inputFile,
+                        validationFile,
                         path.join(
                             validationDirectory,
                             path.basename(config.default_validation_file)
@@ -135,7 +134,7 @@ function run(validationFile, requestValidationFile, pagesFile) {
                         issue['uuid'] = wapyceIssue['uuid'];
 
                         fs.writeFileSync(
-                            inputFile,
+                            validationFile,
                             JSON.stringify(completeValidations),
                             'utf8'
                         );
@@ -191,7 +190,7 @@ function run(validationFile, requestValidationFile, pagesFile) {
                         }
 
                         fs.writeFileSync(
-                            inputFile,
+                            validationFile,
                             JSON.stringify(completeValidations),
                             'utf8'
                         );
